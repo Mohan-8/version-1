@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>No-Due-Management-System</title>
+    <link rel="icon" href="../asset/logo.jpg" />
+  </head>
+
+  <body>
+    <center>
+      <img src="../asset/logo.jpg" width="150px" height="150px" /><br /><br />
+      <form method="post" action="./student.html">
+        <label>Roll Number:<span>&#9733;</span></label>
+        <input
+          type="text"
+          name="rollnumber"
+          placeholder="Roll Number..."
+          required
+          pattern="[0-9]{8}"
+          title="Please enter a valid roll number &#10; It should be of 8 digits &#10; It should not contain any special characters &#10;"
+        /><br /><br />
+        <label>Password:<span>&#9733;</span></label>
+        <input
+          type="password"
+          name="password"
+          placeholder="Password..."
+          required
+          pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,12}$"
+          title="Password contains at least one uppercase letter, &#10; one lowercase letter, &#10; one digit and one special character &#10; Password length should be between 6 to 12"
+        /><br /><br />
+        <input type="submit" value="Login" />
+      </form>
+      <br />
+      <a href="admin.html"
+        >If don't have Roll Number and Password? click here to Contact admin</a
+      >
+    </center>
+  </body>
+</html>
